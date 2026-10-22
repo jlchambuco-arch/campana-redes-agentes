@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diseñador de Campañas para Agentes de Seguros | Contenido SEO en Pocos Clics</title>
+  <meta name="description" content="Herramienta de diseño de contenido para redes sociales hecha para agentes de seguros. Crea posts profesionales en pocos clics, optimizados SEO para impulsar tu marca personal y de servicio. Inversión única: USD $60." />
+  <meta name="keywords" content="agente de seguros, contenido para redes sociales, marketing de seguros, SEO para seguros, diseño de campañas, marca personal agente de seguros, posts para seguros, marketing digital seguros" />
+  <meta property="og:title" content="Diseñador de Campañas para Agentes de Seguros" />
+  <meta property="og:description" content="Crea contenido profesional para redes sociales en pocos clics, optimizado SEO. Impulsa tu marca personal y de servicio. USD $60." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_VE" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <style>
+    * { -webkit-font-smoothing: antialiased; }
+    body { font-family: 'Inter', system-ui, sans-serif; }
+
+    html { scroll-behavior: smooth; }
+
+    ::-webkit-scrollbar { width: 10px; height: 10px; }
+    ::-webkit-scrollbar-track { background: #f1f5f9; }
+    ::-webkit-scrollbar-thumb { background: #1e3a8a; border-radius: 9999px; }
+    ::-webkit-scrollbar-thumb:hover { background: #facc15; }
+
+    .cta-glow {
+      box-shadow: 0 0 0 0 rgba(250, 204, 21, 0.55), 0 10px 30px -10px rgba(30, 58, 138, 0.5);
+      animation: cta-pulse 2.5s infinite;
+    }
+    @keyframes cta-pulse {
+      0% { box-shadow: 0 0 0 0 rgba(250, 204, 21, 0.55), 0 10px 30px -10px rgba(30, 58, 138, 0.5); }
+      70% { box-shadow: 0 0 0 18px rgba(250, 204, 21, 0), 0 14px 38px -8px rgba(30, 58, 138, 0.55); }
+      100% { box-shadow: 0 0 0 0 rgba(250, 204, 21, 0), 0 10px 30px -10px rgba(30, 58, 138, 0.5); }
+    }
+
+    .bg-grid-blue {
+      background-image:
+        linear-gradient(rgba(30, 58, 138, 0.07) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(30, 58, 138, 0.07) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+
+    .fade-up {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    details[open] summary .accordion-icon { transform: rotate(180deg); }
+    .accordion-icon { transition: transform 0.2s ease; }
+  </style>
+</head>
+<body class="bg-white text-slate-900">
+
+  <!-- ============================ HEADER ============================ -->
+  <header class="sticky top-0 z-50 w-full border-b border-slate-200/80 bg-white/85 backdrop-blur-xl">
+    <div class="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      <a href="#" class="flex items-center gap-2.5">
+        <div class="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-blue-700 to-blue-900 shadow-md">
+          <i data-lucide="sparkles" class="h-5 w-5 text-yellow-400"></i>
+        </div>
+        <div class="flex flex-col leading-none">
+          <span class="text-[15px] font-extrabold tracking-tight text-blue-900">Diseñador de Campañas</span>
+          <span class="text-[10px] font-semibold uppercase tracking-[0.18em] text-yellow-600">para Agentes de Seguros</span>
+        </div>
+      </a>
+
+      <nav class="hidden items-center gap-7 lg:flex">
+        <a href="#beneficios" class="text-sm font-medium text-slate-600 hover:text-blue-700">Beneficios</a>
+        <a href="#como-funciona" class="text-sm font-medium text-slate-600 hover:text-blue-700">Cómo funciona</a>
+        <a href="#precio" class="text-sm font-medium text-slate-600 hover:text-blue-700">Precio</a>
+        <a href="#faq" class="text-sm font-medium text-slate-600 hover:text-blue-700">Preguntas</a>
+      </nav>
+
+      <a href="https://wa.me/584145268111" target="_blank" rel="noopener noreferrer"
+         class="hidden lg:inline-flex items-center gap-2 rounded-full bg-yellow-400 px-5 py-2.5 text-sm font-bold text-blue-900 shadow-lg shadow-yellow-400/30 hover:bg-yellow-300 transition-all">
+        <i data-lucide="message-circle" class="h-4 w-4"></i>
+        Quiero mi acceso
+        <i data-lucide="arrow-right" class="h-4 w-4"></i>
+      </a>
+
+      <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')"
+              class="inline-flex h-10 w-10 items-center justify-center rounded-lg text-blue-900 lg:hidden"
+              aria-label="Abrir menú">
+        <i data-lucide="menu" class="h-6 w-6"></i>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden fixed inset-0 top-16 z-40 bg-white lg:hidden">
+      <nav class="flex flex-col gap-1 p-6">
+        <a href="#beneficios" class="rounded-lg px-4 py-3 text-base font-semibold text-slate-700 hover:bg-blue-50 hover:text-blue-700">Beneficios</a>
+        <a href="#como-funciona" class="rounded-lg px-4 py-3 text-base font-semibold text-slate-700 hover:bg-blue-50 hover:text-blue-700">Cómo funciona</a>
+        <a href="#precio" class="rounded-lg px-4 py-3 text-base font-semibold text-slate-700 hover:bg-blue-50 hover:text-blue-700">Precio</a>
+        <a href="#faq" class="rounded-lg px-4 py-3 text-base font-semibold text-slate-700 hover:bg-blue-50 hover:text-blue-700">Preguntas</a>
+        <a href="https://wa.me/584145268111" target="_blank" rel="noopener noreferrer"
+           class="mt-4 inline-flex items-center justify-center gap-2 rounded-full bg-yellow-400 px-6 py-3.5 text-base font-bold text-blue-900 shadow-lg">
+          <i data-lucide="message-circle" class="h-5 w-5"></i>
+          Quiero mi acceso — USD $60
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="flex-1">
+
+    <!-- ============================ HERO ============================ -->
+    <section class="relative overflow-hidden bg-gradient-to-b from-blue-900 via-blue-800 to-blue-900 pt-16 pb-20 sm:pt-20 sm:pb-24">
+      <div class="absolute inset-0 bg-grid-blue opacity-25"></div>
+      <div class="absolute -top-24 -right-24 h-96 w-96 rounded-full bg-yellow-400/20 blur-3xl"></div>
+      <div class="absolute -bottom-24 -left-24 h-96 w-96 rounded-full bg-blue-500/30 blur-3xl"></div>
+
+      <div class="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+        <div class="mb-5 inline-flex items-center gap-2 rounded-full border border-yellow-400/40 bg-yellow-400/10 px-4 py-1.5">
+          <span class="relative flex h-2 w-2">
+            <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-yellow-400 opacity-75"></span>
+            <span class="relative inline-flex h-2 w-2 rounded-full bg-yellow-400"></span>
+          </span>
+          <span class="text-xs font-semibold uppercase tracking-wider text-yellow-300">Para Agentes de Seguros</span>
+        </div>
+
+        <h1 class="text-4xl font-extrabold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl">
+          Crea contenido profesional para tus redes
+          <span class="bg-gradient-to-r from-yellow-300 to-yellow-500 bg-clip-text text-transparent">en pocos clics</span>
+        </h1>
+
+        <p class="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-blue-100">
+          Diseña publicaciones optimizadas para SEO en minutos. Impulsa tu marca personal y atrae más clientes sin ser diseñador.
+        </p>
+
+        <div class="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+          <a href="https://wa.me/584145268111" target="_blank" rel="noopener noreferrer"
+             class="cta-glow group inline-flex w-full items-center justify-center gap-2.5 rounded-full bg-yellow-400 px-7 py-3.5 text-base font-extrabold text-blue-900 hover:bg-yellow-300 hover:scale-[1.02] transition-all sm:w-auto">
+            <i data-lucide="message-circle" class="h-5 w-5"></i>
+            Acceder por USD $60
+            <i data-lucide="arrow-right" class="h-5 w-5 transition-transform group-hover:translate-x-1"></i>
+          </a>
+          <a href="#como-funciona"
+             class="inline-flex w-full items-center justify-center gap-2 rounded-full border-2 border-white/30 bg-white/5 px-7 py-3.5 text-base font-semibold text-white backdrop-blur-sm hover:bg-white/10 transition-all sm:w-auto">
+            Ver cómo funciona
+          </a>
+        </div>
+
+        <div class="mt-6 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-sm text-blue-200">
+          <span class="inline-flex items-center gap-1.5">
+            <i data-lucide="check-circle-2" class="h-4 w-4 text-yellow-400"></i>
+            Pago único
+          </span>
+          <span class="inline-flex items-center gap-1.5">
+            <i data-lucide="check-circle-2" class="h-4 w-4 text-yellow-400"></i>
+            Métodos de pago por WhatsApp
+          </span>
+          <span class="inline-flex items-center gap-1.5">
+            <i data-lucide="check-circle-2" class="h-4 w-4 text-yellow-400"></i>
+            Acceso in situ
+          </span>
+        </div>
+      </div>
+
+      <div class="pointer-events-none absolute bottom-0 left-0 w-full">
+        <svg viewBox="0 0 1440 60" class="h-10 w-full sm:h-14" preserveAspectRatio="none">
+          <path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" fill="#ffffff"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ============================ BENEFITS ============================ -->
+    <section id="beneficios" class="bg-white py-16 sm:py-20">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center fade-up">
+          <span class="mb-3 inline-flex items-center rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-700">Beneficios</span>
+          <h2 class="text-3xl font-extrabold tracking-tight text-blue-900 sm:text-4xl">Todo lo que necesitas para destacar</h2>
+          <p class="mt-4 text-base text-slate-600">Una herramienta simple que te ayuda a publicar contenido profesional y atraer más clientes.</p>
+        </div>
+
+        <div class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="fade-up rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-100 transition-all">
+            <div class="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-blue-700 to-blue-900 shadow-md">
+              <i data-lucide="mouse-pointer-click" class="h-5 w-5 text-yellow-400"></i>
+            </div>
+            <h3 class="text-base font-bold text-blue-900">Publica en pocos clics</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-600">Elige el ramo, describe tu idea y descarga un post listo. Sin curvas de aprendizaje.</p>
+          </div>
+
+          <div class="fade-up rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-100 transition-all">
+            <div class="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-yellow-500 to-yellow-600 shadow-md">
+              <i data-lucide="search" class="h-5 w-5 text-white"></i>
+            </div>
+            <h3 class="text-base font-bold text-blue-900">Optimizado para SEO</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-600">Cada publicación incluye palabras clave del sector asegurador. Google te encuentra más fácil.</p>
+          </div>
+
+          <div class="fade-up rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-100 transition-all">
+            <div class="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-blue-700 to-blue-900 shadow-md">
+              <i data-lucide="image" class="h-5 w-5 text-yellow-400"></i>
+            </div>
+            <h3 class="text-base font-bold text-blue-900">Diseño profesional</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-600">Plantillas pensadas para seguros, con tipografías y colores que transmiten confianza.</p>
+          </div>
+
+          <div class="fade-up rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-100 transition-all">
+            <div class="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-yellow-400 to-yellow-600 shadow-md">
+              <i data-lucide="share-2" class="h-5 w-5 text-white"></i>
+            </div>
+            <h3 class="text-base font-bold text-blue-900">Formatos para cada red</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-600">Cuadrado 1:1 para Instagram, vertical 9:16 para Stories y Reels, horizontal para LinkedIn.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ HOW IT WORKS ============================ -->
+    <section id="como-funciona" class="bg-gradient-to-b from-blue-50/60 to-white py-16 sm:py-20">
+      <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center fade-up">
+          <span class="mb-3 inline-flex items-center rounded-full bg-yellow-100 px-3 py-1 text-xs font-semibold text-yellow-700">Cómo funciona</span>
+          <h2 class="text-3xl font-extrabold tracking-tight text-blue-900 sm:text-4xl">Tres pasos. Listo.</h2>
+        </div>
+
+        <div class="mt-12 grid gap-6 md:grid-cols-3">
+          <div class="text-center fade-up">
+            <div class="relative z-10 mx-auto flex h-20 w-20 items-center justify-center rounded-full border-4 border-white bg-gradient-to-br from-blue-700 to-blue-900 shadow-xl">
+              <i data-lucide="shield-check" class="h-8 w-8 text-yellow-400"></i>
+              <span class="absolute -right-1 -top-1 flex h-7 w-7 items-center justify-center rounded-full bg-yellow-400 text-xs font-extrabold text-blue-900">1</span>
+            </div>
+            <h3 class="mt-4 text-lg font-bold text-blue-900">Elige el ramo</h3>
+            <p class="mx-auto mt-2 max-w-xs text-sm leading-relaxed text-slate-600">Viaje, vida, salud, auto, hogar o empresarial. La herramienta adapta plantillas y palabras clave al ramo.</p>
+          </div>
+
+          <div class="text-center fade-up">
+            <div class="relative z-10 mx-auto flex h-20 w-20 items-center justify-center rounded-full border-4 border-white bg-gradient-to-br from-blue-700 to-blue-900 shadow-xl">
+              <i data-lucide="image" class="h-8 w-8 text-yellow-400"></i>
+              <span class="absolute -right-1 -top-1 flex h-7 w-7 items-center justify-center rounded-full bg-yellow-400 text-xs font-extrabold text-blue-900">2</span>
+            </div>
+            <h3 class="mt-4 text-lg font-bold text-blue-900">Describe tu idea</h3>
+            <p class="mx-auto mt-2 max-w-xs text-sm leading-relaxed text-slate-600">Escribe una frase como 'pareja viajando por París'. Se genera la imagen, el título y el copy con SEO.</p>
+          </div>
+
+          <div class="text-center fade-up">
+            <div class="relative z-10 mx-auto flex h-20 w-20 items-center justify-center rounded-full border-4 border-white bg-gradient-to-br from-blue-700 to-blue-900 shadow-xl">
+              <i data-lucide="rocket" class="h-8 w-8 text-yellow-400"></i>
+              <span class="absolute -right-1 -top-1 flex h-7 w-7 items-center justify-center rounded-full bg-yellow-400 text-xs font-extrabold text-blue-900">3</span>
+            </div>
+            <h3 class="mt-4 text-lg font-bold text-blue-900">Descarga y publica</h3>
+            <p class="mx-auto mt-2 max-w-xs text-sm leading-relaxed text-slate-600">Descarga tu post en PNG de alta resolución y súbelo a tus redes. Listo para atraer clientes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ PRICING ============================ -->
+    <section id="precio" class="relative overflow-hidden bg-gradient-to-br from-blue-900 via-blue-800 to-blue-950 py-20 sm:py-24">
+      <div class="absolute inset-0 bg-grid-blue opacity-20"></div>
+      <div class="absolute -left-20 top-0 h-72 w-72 rounded-full bg-yellow-400/20 blur-3xl"></div>
+      <div class="absolute -right-20 bottom-0 h-80 w-80 rounded-full bg-blue-500/30 blur-3xl"></div>
+
+      <div class="relative mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center fade-up">
+          <span class="mb-3 inline-flex items-center gap-1.5 rounded-full border border-yellow-400/30 bg-yellow-400/10 px-3 py-1 text-xs font-semibold text-yellow-300">
+            <i data-lucide="wallet" class="h-3 w-3"></i> Pago único
+          </span>
+          <h2 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-5xl">
+            Una sola inversión. <span class="text-yellow-400">Cero suscripciones.</span>
+          </h2>
+          <p class="mx-auto mt-4 max-w-xl text-base text-blue-100">Pagas una sola vez y la herramienta es tuya para siempre. Sin costos recurrentes ni sorpresas.</p>
+        </div>
+
+        <div class="relative mx-auto mt-10 max-w-2xl fade-up">
+          <div class="overflow-hidden rounded-3xl border-2 border-yellow-400/30 bg-white shadow-2xl">
+            <div class="bg-gradient-to-r from-blue-900 to-blue-700 px-6 py-3 text-center text-sm font-bold uppercase tracking-wider text-yellow-400">
+              ★ Oferta de lanzamiento ★
+            </div>
+
+            <div class="p-7 sm:p-9">
+              <div class="text-center">
+                <div class="text-xs font-semibold uppercase tracking-wider text-slate-500">Inversión total</div>
+                <div class="mt-2 flex items-baseline justify-center gap-2">
+                  <span class="text-xl font-bold text-slate-400 line-through">USD $120</span>
+                  <span class="rounded-full bg-yellow-100 px-2 py-0.5 text-xs font-bold text-yellow-700">-50% hoy</span>
+                </div>
+                <div class="mt-1 flex items-baseline justify-center gap-1">
+                  <span class="text-6xl font-extrabold text-blue-900">$60</span>
+                  <span class="text-lg font-bold text-blue-700">USD</span>
+                </div>
+                <p class="mt-2 text-sm text-slate-500">Pago único · Sin renovaciones · Acceso de por vida</p>
+              </div>
+
+              <div class="mt-7 grid grid-cols-1 gap-2.5 sm:grid-cols-2">
+                <div class="flex items-start gap-2"><i data-lucide="check-circle-2" class="mt-0.5 h-4 w-4 flex-shrink-0 text-blue-700"></i><span class="text-sm font-medium text-slate-700">Acceso completo a la herramienta</span></div>
+                <div class="flex items-start gap-2"><i data-lucide="check-circle-2" class="mt-0.5 h-4 w-4 flex-shrink-0 text-blue-700"></i><span class="text-sm font-medium text-slate-700">Plantillas para todos los ramos de seguros</span></div>
+                <div class="flex items-start gap-2"><i data-lucide="check-circle-2" class="mt-0.5 h-4 w-4 flex-shrink-0 text-blue-700"></i><span class="text-sm font-medium text-slate-700">Generador de imágenes con IA</span></div>
+                <div class="flex items-start gap-2"><i data-lucide="check-circle-2" class="mt-0.5 h-4 w-4 flex-shrink-0 text-blue-700"></i><span class="text-sm font-medium text-slate-700">Editor de títulos, colores y logo</span></div>
+                <div class="flex items-start gap-2"><i data-lucide="check-circle-2" class="mt-0.5 h-4 w-4 flex-shrink-0 text-blue-700"></i><span class="text-sm font-medium text-slate-700">Copy automático con SEO incluido</span></div>
+                <div class="flex items-start gap-2"><i data-lucide="check-circle-2" class="mt-0.5 h-4 w-4 flex-shrink-0 text-blue-700"></i><span class="text-sm font-medium text-slate-700">Formatos 1:1, 9:16 y 16:9</span></div>
+                <div class="flex items-start gap-2"><i data-lucide="check-circle-2" class="mt-0.5 h-4 w-4 flex-shrink-0 text-blue-700"></i><span class="text-sm font-medium text-slate-700">Descarga ilimitada en PNG HD</span></div>
+                <div class="flex items-start gap-2"><i data-lucide="check-circle-2" class="mt-0.5 h-4 w-4 flex-shrink-0 text-blue-700"></i><span class="text-sm font-medium text-slate-700">Soporte directo por WhatsApp</span></div>
+              </div>
+
+              <a href="https://wa.me/584145268111" target="_blank" rel="noopener noreferrer"
+                 class="cta-glow mt-7 inline-flex w-full items-center justify-center gap-2.5 rounded-full bg-yellow-400 px-7 py-4 text-base font-extrabold text-blue-900 hover:bg-yellow-300 hover:scale-[1.02] transition-all">
+                <i data-lucide="message-circle" class="h-5 w-5"></i>
+                Quiero mi acceso por USD $60
+                <i data-lucide="arrow-right" class="h-5 w-5"></i>
+              </a>
+              <p class="mt-3 text-center text-xs text-slate-500">Al hacer clic te llevamos a WhatsApp, donde te compartimos los métodos de pago.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mx-auto mt-8 max-w-xl rounded-2xl border border-yellow-400/30 bg-yellow-400/10 p-5 text-center backdrop-blur-sm fade-up">
+          <p class="text-sm leading-relaxed text-yellow-100">
+            <i data-lucide="target" class="mb-1 mr-1 inline h-4 w-4 text-yellow-300"></i>
+            <strong class="font-bold text-yellow-300">¿Cuánto vale cerrar una póliza adicional?</strong>
+            USD $60 se recupera con tu primera venta. El resto es crecimiento puro.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ FAQ ============================ -->
+    <section id="faq" class="bg-white py-16 sm:py-20">
+      <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center fade-up">
+          <span class="mb-3 inline-flex items-center rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-700">Preguntas frecuentes</span>
+          <h2 class="text-3xl font-extrabold tracking-tight text-blue-900 sm:text-4xl">Resolvemos tus dudas</h2>
+        </div>
+
+        <div class="mt-10 space-y-3">
+          <details class="group overflow-hidden rounded-2xl border border-slate-200 bg-white px-5 shadow-sm open:border-blue-300">
+            <summary class="flex cursor-pointer list-none items-center justify-between py-5 text-left text-base font-bold text-blue-900">
+              ¿Es difícil de usar?
+              <i data-lucide="chevron-down" class="accordion-icon h-5 w-5 text-blue-700"></i>
+            </summary>
+            <p class="pb-5 text-sm leading-relaxed text-slate-600">No. Si sabes usar WhatsApp, sabes usar esta herramienta. Eliges el ramo, describes tu idea y descargas el post listo para publicar.</p>
+          </details>
+
+          <details class="group overflow-hidden rounded-2xl border border-slate-200 bg-white px-5 shadow-sm open:border-blue-300">
+            <summary class="flex cursor-pointer list-none items-center justify-between py-5 text-left text-base font-bold text-blue-900">
+              ¿Qué incluye el pago de USD $60?
+              <i data-lucide="chevron-down" class="accordion-icon h-5 w-5 text-blue-700"></i>
+            </summary>
+            <p class="pb-5 text-sm leading-relaxed text-slate-600">Acceso completo y permanente: plantillas por ramo, generador de imágenes con IA, editor de títulos y logo, copy con SEO, descargas ilimitadas y soporte por WhatsApp. Sin costos recurrentes.</p>
+          </details>
+
+          <details class="group overflow-hidden rounded-2xl border border-slate-200 bg-white px-5 shadow-sm open:border-blue-300">
+            <summary class="flex cursor-pointer list-none items-center justify-between py-5 text-left text-base font-bold text-blue-900">
+              ¿Cómo recibo los métodos de pago?
+              <i data-lucide="chevron-down" class="accordion-icon h-5 w-5 text-blue-700"></i>
+            </summary>
+            <p class="pb-5 text-sm leading-relaxed text-slate-600">Al hacer clic en cualquier botón de esta página, serás dirigido a nuestro WhatsApp. Allí te compartimos todos los métodos de pago disponibles y activamos tu acceso el mismo día.</p>
+          </details>
+        </div>
+
+        <div class="mt-10 text-center fade-up">
+          <p class="text-sm text-slate-600">¿Tienes otra pregunta?</p>
+          <a href="https://wa.me/584145268111" target="_blank" rel="noopener noreferrer"
+             class="mt-3 inline-flex items-center gap-2 rounded-full bg-blue-900 px-5 py-2.5 text-sm font-bold text-white shadow-lg hover:bg-blue-800 transition-all">
+            <i data-lucide="message-circle" class="h-4 w-4 text-yellow-400"></i>
+            Escríbenos por WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer class="bg-blue-950 text-blue-100">
+    <div class="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
+      <div class="flex flex-col items-center justify-between gap-6 sm:flex-row">
+        <div class="flex items-center gap-2.5">
+          <div class="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-yellow-400 to-yellow-600">
+            <i data-lucide="sparkles" class="h-5 w-5 text-blue-900"></i>
+          </div>
+          <div class="flex flex-col leading-none">
+            <span class="text-[15px] font-extrabold tracking-tight text-white">Diseñador de Campañas</span>
+            <span class="text-[10px] font-semibold uppercase tracking-[0.18em] text-yellow-400">para Agentes de Seguros</span>
+          </div>
+        </div>
+
+        <a href="https://wa.me/584145268111" target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 rounded-full bg-yellow-400 px-5 py-2.5 text-sm font-bold text-blue-900 shadow-lg hover:bg-yellow-300 transition-all">
+          <i data-lucide="message-circle" class="h-4 w-4"></i>
+          USD $60 · Acceder ahora
+        </a>
+      </div>
+
+      <div class="mt-8 border-t border-white/10 pt-6 text-center text-xs text-blue-300">
+        <p>© 2026 Diseñador de Campañas para Agentes de Seguros. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+
+    // Fade-up animation on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+    // Close mobile menu when clicking a link
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('mobile-menu').classList.add('hidden');
+      });
+    });
+  </script>
+
+</body>
+</html>
